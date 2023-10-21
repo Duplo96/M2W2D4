@@ -33,6 +33,8 @@ const amy = {
   lastName: "Reed",
   isAmbassador: false,
 };
+// HO CREATO UN 4 OGGETTO PER VEDERE ANCHE LA CONDIZIONE AMBASSADOR TRUE E < FREESHIPPING
+
 const tiziano = {
   name: "Tiziano",
   lastName: "Titone",
