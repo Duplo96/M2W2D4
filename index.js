@@ -38,31 +38,22 @@ const amy = {
 const tiziano = {
   name: "Tiziano",
   lastName: "Titone",
-  isAmbassador: true,}
+  isAmbassador: true,
+};
 
-const prices = [34, 5, 2,10,200,300,1000,40,35];
+const prices = [34, 5, 2, 10, 200, 300, 1000, 40, 35];
 const shippingCost = 50;
 let utenteCheEffettuaLAcquisto = marco; //cambia il valore qui per provare se il tuo algoritmo funziona!
 const freeShipping = 100;
 
-
-
-
-
-
-
-
-
-
 let clients = [];
-clients.push(marco, paul, amy,tiziano);   //Clients ora è un array con dentro marco,paul,amy,tiziano
-clients[0].totalShoppingCart = prices [0] + prices [4]
-clients[1].totalShoppingCart = prices [0] + prices [2]
-clients[2].totalShoppingCart = prices [0] + prices [5]
-clients[3].totalShoppingCart = prices [0]
+clients.push(marco, paul, amy, tiziano); //Clients ora è un array con dentro marco,paul,amy,tiziano
+clients[0].totalShoppingCart = prices[0] + prices[4];
+clients[1].totalShoppingCart = prices[0] + prices[2];
+clients[2].totalShoppingCart = prices[0] + prices[5];
+clients[3].totalShoppingCart = prices[0];
 
-
-console.log()
+console.log();
 
 for (let i = 0; i < clients.length; i++) {
   if (clients[i].isAmbassador) {
@@ -70,7 +61,8 @@ for (let i = 0; i < clients.length; i++) {
       clients[i].totalShoppingCart *= 0.7;
       // console.log(clients[i].name + " " + clients[i].lastName + " €" + clients[i].totalShoppingCart + " Sei un utente Ambassador e la spedizione è gratuita.");
     } else {
-      clients[i].totalShoppingCart = clients[i].totalShoppingCart * 0.7 + shippingCost;
+      clients[i].totalShoppingCart =
+        clients[i].totalShoppingCart * 0.7 + shippingCost;
       // console.log(clients[i].name + " " + clients[i].lastName + " €" + clients[i].totalShoppingCart + " Sei un utente Ambassador e paghi le spese di spedizione.");
     }
   } else {
@@ -82,11 +74,10 @@ for (let i = 0; i < clients.length; i++) {
     }
   }
 }
-console.log(utenteCheEffettuaLAcquisto)
+console.log(utenteCheEffettuaLAcquisto);
 
-
-console.log("STAMPIAMO PER OGNI UTENTE LA PROPRIETA AMBASSADOR")
-console.log()
+console.log("STAMPIAMO PER OGNI UTENTE LA PROPRIETA AMBASSADOR");
+console.log();
 for (let i = 0; i < clients.length; i++) {
   if (clients[i].isAmbassador)
     console.log(
@@ -94,13 +85,15 @@ for (let i = 0; i < clients.length; i++) {
     );
   else {
     console.log(
-    clients[i].name + "" + clients[i].lastName + " non è un Ambassador"
+      clients[i].name + "" + clients[i].lastName + " non è un Ambassador"
     );
   }
 }
-console.log()
-console.log("TROVIAMO I CLIENTI AMBASSADOR E PUSHIAMOLI ALL'INTERNO DI AMBASSADORCLIENTS")
-console.log()
+console.log();
+console.log(
+  "TROVIAMO I CLIENTI AMBASSADOR E PUSHIAMOLI ALL'INTERNO DI AMBASSADORCLIENTS"
+);
+console.log();
 
 let ambassadorClients = [];
 for (let i = 0; i < clients.length; i++) {
