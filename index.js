@@ -90,11 +90,11 @@ console.log()
 for (let i = 0; i < clients.length; i++) {
   if (clients[i].isAmbassador)
     console.log(
-      `${clients[i].name} ${clients[i].lastName}` + " è un Ambassador"
+      clients[i].name + "" + clients[i].lastName + " è un Ambassador"
     );
   else {
     console.log(
-      `${clients[i].name} ${clients[i].lastName}` + " non è un Ambassador"
+    clients[i].name + "" + clients[i].lastName + " non è un Ambassador"
     );
   }
 }
